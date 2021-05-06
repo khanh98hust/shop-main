@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+}
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+}
+
 
 * {
   margin: 0px;
@@ -46,6 +60,9 @@
 .logo {
   display: flex;
   align-items: center;
+}
+.logo {
+  cursor: pointer;
 }
 
 .menu-active {
@@ -177,7 +194,11 @@
 }
 
 .nav-menu-rigth-item {
-  margin-left: 24px;
+  margin: 0px 12px !important;
+}
+
+.icon a {
+  margin: 0px 8px;
 }
 
 .nav-menu {
@@ -308,7 +329,7 @@
   max-width: 260px;
   width: 100%;
   height: 345px;
-  margin: 0px 21px;
+  margin-left: 42px;
   background-color: #d8e3e8;
   margin-bottom: 42px;
 }
@@ -335,7 +356,7 @@
   font-size: 16px;
 }
 
-hr {
+.content-box hr, .linee hr {
   width: 50px;
   height: 1px;
   border: none;
@@ -351,6 +372,11 @@ hr {
   color: white;
 }
 
+.content-box:hover .hr {
+  width: 80px;
+  transition: all .5s;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -361,29 +387,45 @@ hr {
   max-width: 260px;
   width: 100%;
   height: 470px;
-  margin: 0px 21px;
-  background-color: #d8e3e8;
+  margin-left: 42px;
+  border: 1px solid #f0f3f2;
   margin-bottom: 42px;
+}
+
+.item-bottom:hover {
+  background-color: #f0f3f2;
+}
+
+.item-bottom:hover .image{
+  background-color: #a8e2e9;
+}
+
+.item-bottom:hover .linee hr{
+  width: 80px;
+  transition: all .5s;
 }
 
 /* item */
 
-.item-bottom img {
-  background-color: #00bcd4;
+.image {
   width: 100%;
-  height: 326px;
-  background-size: cover;
+  background-color: #f0f3f2;
   position: relative;
+  padding-bottom: 126%;
+  background-size: cover;
 }
 
 .content-item {
   text-align: center;
-  padding: 20px 0px;
-  line-height: 20px;
-  height: 144px;
+  padding: 22px 0px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sale {
+  text-align: center;
   position: absolute;
   right: -18px;
   top: 21px;
@@ -399,6 +441,7 @@ hr {
 }
 
 .new {
+  text-align: center;
   z-index: 9;
   position: absolute;
   right: -18px;
@@ -414,10 +457,49 @@ hr {
 }
 
 /* star */
-.checked {
-  color: orange;
+.linee {
+  margin: 10px 0px;
 }
 
+.checked {
+  color: orange !important;
+}
+.star {
+  text-align: center;
+}
+.fa-star {
+  color: #b6c6c9;
+  font-size: 12px;
+}
+
+.name-item {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5f727f;
+}
+
+.price {
+  font-family: 'SourceSansPro-Regular', sans-serif;
+  color: #00bcd4;
+  font-size: 16px;
+}
+
+.icon-item {
+  font-family: 'SourceSansPro-Regular', sans-serif;
+  color: #99a9b5;
+  font-size: 14px;
+}
+
+i {
+  margin: 0 !important;
+}
+
+.icon-item i {
+  font-size: 15px;
+  color: #99a9b5;
+  margin-right: 10px !important;
+}
 
 /* navigation */
 
@@ -460,8 +542,9 @@ hr {
 /* our-brand */
 
 .container {
-  font-family: "Montserrat@wght:100", sans-serif;
+  font-family: "Montserrat-light", sans-serif;
   margin-top: 120px;
+  font-weight: lighter;
   height: 430px;
   padding: 32px 8px; 
   background:
@@ -526,11 +609,11 @@ hr {
 .lasted-new {
   margin-top: 110px;
   text-align: center;
-
 }
 
 #lastest{
   font-size: 36px;
+  padding-bottom: 52px;
 }
 
 .lastest-main {
@@ -539,17 +622,17 @@ hr {
 }
 
 .lastest-card-box {
-  max-width: 1170px;
   width: 100%;
-  background-color: red;
-  height: 100px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .lastest-card {
   width: 260px;
   height: 510px;
-  background-color: #00bcd4;
+  margin: 0px 21px;
+  background-color: #f0f3f2;
 }
 
 .lastest-card .img {
@@ -558,7 +641,7 @@ hr {
   padding-bottom: 66%;
 }
 
-.admin, .react {
+.admin, .react, .readmore {
   display: flex;
 }
 
@@ -566,4 +649,47 @@ hr {
   padding: 18px;
   display: flex;
   justify-content: space-between;
+}
+.react p {
+  margin: 0px 8px;
+}
+
+.lastest-title {
+  padding: 23px 18px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.lastest-content {
+  text-align: left;
+  font-size: 16px;
+  color: #5f727f;
+  padding: 18px 18px;
+}
+
+.readmore i {
+  font-size: 30px;
+  color: #b6c6c9;
+  margin: 0;;
+}
+
+.readmore {
+  padding: 22px 18px;
+}
+
+.btn-readmore {
+  font-size: 14x;
+  color: #00bcd4;
+  border: 2px solid #00bcd4 ;
+  padding: 0px 12px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.test::after {
+  content: '\e604';
+}
+
+.line {
+  margin: 77px 0px;
 }
