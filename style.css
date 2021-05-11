@@ -355,6 +355,7 @@
 
 .filter-price {
   margin-top: 55px;
+  
 }
 
 /* main-right */
@@ -579,6 +580,11 @@ i {
   height: 50px;
   margin-top: 73px;
   margin-bottom: 40px;
+  width: 95%;
+  margin-left: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -876,10 +882,13 @@ ul { list-style-type: none; }
 /* .submenu li { border-bottom: 1px solid #4b4a5e; } */
 
 .submenu a {
+  font-family: 'SourceSansPro-Regular';
   display: block;
   text-decoration: none;
+  border: 1px solid #dfe5e8;
+  border-bottom: none;
   color: #5f727f;
-  padding: 12px;
+  padding: 20px;
   padding-left: 42px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
@@ -1479,7 +1488,7 @@ ul { list-style-type: none; }
   color: #6e7e8a;
   border: 1px solid;
   padding: 4px 9px;
-  margin-right: 6px;
+  margin-right: 5px;
   margin-bottom: 6px;
   cursor: pointer;
 }
@@ -1493,10 +1502,115 @@ ul { list-style-type: none; }
 .coupon {
   background-color: #ff5176;
   text-align: center;
-  padding: ;
+  padding: 18px;
+  margin-top: 80px;
 }
 
-.coupon-main {
-  width: 80%;
+.coupon-main { 
   border: 6px solid white;
+  padding: 20px;
+}
+
+#coupon-price {
+  font-size: 120px;
+  color: white;
+  font-family: 'Montserrat-bold';
+}
+
+.coupon-title {
+  font-size: 30px;
+  font-family: 'Montserrat-bold';
+  color: white;
+}
+.free {
+  color: #ffd75e;
+}
+
+.coupon-content {
+  color: white;
+  font-family: 'SourceSansPro-light';
+  font-size: 24px;
+}
+
+#coupon-input {
+  padding: 11px;
+  font-family: 'SourceSansPro-Regular';
+  color: #99a9b5;
+  border: none;
+  margin-top: 40px;
+}
+
+.sign-up {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Montserrat-bold';
+  color: white;
+  background-color: #2c2e3d;
+  border: none;
+  padding: 11px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.sub-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+}
+
+#sub {
+  font-family: 'SourceSansPro-Regular';
+  color: #99a9b5;
+}
+
+#sub-price {
+  font-size: 24px;
+  font-family: 'SourceSansPro-light';
+  color: #3c3950;
+}
+
+.btn-view-cart, .btn-checkout {
+  font-size: 14px;
+  color: white;
+  background-color: #00bcd4;
+  padding: 6px 18px;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Montserrat-bold';
+}
+
+.cart-checkout {
+  margin-top: 30px;
+}
+
+.btn-checkout {
+  padding: 4px 18px;
+  float: right;
+  color: #3c3950;
+  background-color: white;
+  border: 2px solid #3c3950;
+}
+
+.filter select {
+  color: #a1b0ba;
+  border: none;
+  padding: 5px;
+  width: 180px;
+}
+
+.filter span {
+  font-size: 14px;
+  font-family: 'Montserrat-light';
+  color: #5f727f;
+}
+
+.filter p {
+  color: #99a9b5;
+  font-family: 'SourceSansPro-Regular';
+}
+
+.fa-toggle-on {
+  font-size: 30px;
+  margin: 0px 8px !important;
 }

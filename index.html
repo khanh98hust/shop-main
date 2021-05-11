@@ -110,7 +110,7 @@
                 <li><a href="#">January 2013</a></li>
                 <li><a href="#">March 2020</a></li>
                 <li>
-                  <div class="link">January 2012<i class="fa fa-chevron-right"></i></div>
+                  <a>January 2012<i class="fa fa-chevron-right"></i></a>
                 </li>
                 <ul class="submenu">
                   <li>a</li>
@@ -303,15 +303,54 @@
       </div>
       <div class="coupon">
         <div class="coupon-main">
-          <p>$5</p>
-          <p>COUPON</p>
-          <P>FOR FREE</P>
-          <P>Just Signup For Our Newsletter And Get $5 To Your Account</P>
-          <input type="text" name="" id="">
-          <button class="sign-up"></button>
+          <p id="coupon-price">$5</p>
+          <p class="coupon-title">COUPON</p>
+          <P class="coupon-title free">FOR FREE</P>
+          <P class="coupon-content">Just Signup For Our Newsletter And Get $5 To Your Account</P>
+          <input placeholder="Enter Your Email..." type="text" name="" id="coupon-input">
+          <button class="sign-up">SIGN UP ME</button>
         </div>
       </div>
-      <div class="cart"></div>
+      <div class="cart">
+        <div class="title" style="margin-top: 56px;">
+          <p>CART <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div class="summary-item feature-item" style="margin-top: 28px;">
+          <div class="sum-img">
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>1 X $35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item feature-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>1 X $35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub-total">
+          <span id="sub">SubTotal:</span>
+          <span id="sub-price">$2589.99</span>
+        </div>
+        <div class="cart-checkout">
+          <button class="btn-view-cart">VIEW CART</button>
+          <button class="btn-checkout">CHECK OUT</button>
+        </div>
+      </div>
     </div>
     <div class="main-right">
       <div class="main-right-top">
@@ -369,7 +408,22 @@
         </div>
       </div>
       <div class="filter">
-
+        <div style="display: flex; align-items: center;">
+          <select name="" id="">
+            <option value="">Default sorting</option>
+          </select>
+          <div style="display: flex; align-items: center; margin-left: 22px;">
+            <span>DESC</span>
+            <span><i class="far fa-toggle-on"></i></span>
+            <span>ASC</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <p>Showing 1-12 of 17 results</p>
+          <select name="" id="" style="margin-left: 22px;">
+            <option value="">Show 12 on page</option>
+          </select>
+        </div>
       </div>
       <div class="main-right-bottom">
         <div class="item-bottom">
