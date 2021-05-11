@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Shop-main</title>
+</head>
+
+<body>
+  <div class="nav-top">
+    <div class="nav-top-area">
+      <div class="main-nav-top-area">
+        <div class="phoneNumber">
+          <i class="fas fa-headphones" style="margin-right: 7px !important;">
+          </i>
+          <p>+1 916-85-2235</p>
+        </div>
+        <div class="icon">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-invision"></i></a>
+          <a href=""><i class="fab fa-google-plus-g"></i></a>
+          <a href=""><i class="fas fa-camera-retro"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <div class="link-nav">
+          <a href="#">> My Account</a>
+          <a href="#">> FAQ</a>
+          <a href="#">> Contact Us</a>
+          <a href="#">> Newsletter Signup</a>
+          <a href="#">> Shipping Terms</a>
+        </div>
+        <button class="btn-nav">My Whishlist</button>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bottom">
+    <div class="main-nav-bottom">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo">
+        <img src="./public/logo2.png" alt="">
+        <span>THEGEM</span>
+      </div>
+      <div class="nav-menu">
+        <a href="#">HOME</a>
+        <a href="#">PAGES</a>
+        <a href="#">BLOCK</a>
+        <a href="#">PORTFOLIOS</a>
+        <a class="menu-active" href="#">SHOP</a>
+        <a href="#">FEATURES</a>
+        <a href="#">ELEMENTS</a>
+      </div>
+      <div class="nav-menu-right">
+        <img src="./public/usa.PNG" class="nav-menu-rigth-item" alt="" style="height: 13px;">
+        <i class="fas fa-search nav-menu-rigth-item"></i>
+        <i class="fas fa-shopping-basket nav-menu-rigth-item"></i>
+        <div class="cart-number">
+          <p>2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slider-content">
+      <span><b>50%</b> OFF</span>
+      <p>Annual Seasonal Discounts On All Kinds Of Jewelry In Selected Categories.</p>
+      <p>Limited Time Only Proposition! Look For The “Sales” Label Over Desired Items.</p>
+    </div>
+    <div class="btn-box">
+      <div class="btn btn-left">
+        <i class="fas fa-arrow-left but"></i>
+      </div>
+      <div class="btn btn-right">
+        <i class="fas fa-arrow-right but"></i>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <p style="color: #00bcd4;">Home</p>
+      <p style="color: white;">→</p>
+      <p class="link-active" style="color: white;">Shop</p>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-left">
+      <div class="category">
+        <span>CATEGORIES&nbsp;<i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+        <div class="categoty-item">
+          <ul id="accordion" class="accordion">
+            <li>
+              <div class="link">VERSION<i class="fa fa-chevron-right"></i></div>
+            </li>
+            <li>
+              <div class="link">LOREM IPSUM</div>
+            </li>
+            <li>
+              <div class="link">PROIN<i class="fa fa-chevron-right"></i></div>
+              <ul class="submenu">
+                <li><a href="#">July 2015</a></li>
+                <li><a href="#">January 2013</a></li>
+                <li><a href="#">March 2020</a></li>
+                <li>
+                  <div class="link">January 2012<i class="fa fa-chevron-right"></i></div>
+                </li>
+                <ul class="submenu">
+                  <li>a</li>
+                  <li>b</li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <div class="link">GRAVIDA<i class="fa fa-chevron-right"></i></div>
+            </li>
+            <li>
+              <div class="link">NIBH VEL VELIT<i class="fa fa-chevron-right"></i></div>
+            </li>
+            <li>
+              <div class="link">AUCTOR</div>
+            </li>
+            <li>
+              <div class="link">ALIQUET<i class="fa fa-chevron-right"></i></div>
+            </li>
+            <li>
+              <div class="link">AENEAN</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search">
+        <input placeholder="Search for products..." type="text" name="" id="">
+      </div>
+      <div class="filter-price">
+        <div class="title">
+          <p>FILTER BY PRICE <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div id="filter-price">
+          <div class="circle-filter cr1"></div>
+          <div class="circle-filter cr2"></div>
+        </div>
+        <div class="filter-price-btn-box">
+          <button class="btn-filter">FILTER</button>
+          <div id="price">
+            <span style="color: #99a9b5;">Price:</span>
+            <span style="color: #5f727f;">$345-$1640</span>
+          </div>
+        </div>
+      </div>
+      <div class="filter-color">
+        <div class="title">
+          <p>FILTER BY COLOR <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div id="filter-color">
+          <select name="" id="select">
+            <option>Any Color</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-size">
+        <div class="title">
+          <p>FILTER BY size <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div id="filter-color">
+          <select name="" id="select">
+            <option>Any Size</option>
+          </select>
+        </div>
+      </div>
+      <div class="recently-view">
+        <div class="title">
+          <p>RECENTLY VIEWED <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div class="view-box">
+          <div class="view-item">
+            <div class="view-item-img">
+            </div>
+            <div class="view-item-content">
+              <p class="view-item-title">Product title here</p>
+              <div class="star" style="margin-left: -34px !important;">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="view-item-price">$35.00</p>
+            </div>
+          </div>
+          <div class="view-item">
+            <div class="view-item-img">
+            </div>
+            <div class="view-item-content">
+              <p class="view-item-title">Product title here</p>
+              <div class="star" style="margin-left: -34px !important;">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="view-item-price">$35.00</p>
+            </div>
+          </div>
+          <div class="view-item">
+            <div class="view-item-img">
+            </div>
+            <div class="view-item-content">
+              <p class="view-item-title">Product title here</p>
+              <div class="star" style="margin-left: -34px !important;">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="view-item-price">$35.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-tag">
+        <div class="title" style="margin-top: 56px;">
+          <p>PRODUCT TAGS <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div class="tag-box">
+          <p>morbi</p>
+          <p>accumsan</p>
+          <p>ipsum</p>
+          <p>velit</p>
+          <p>nam</p>
+          <p>tellus</p>
+          <p>aodio</p>
+          <p>tincidunt</p>
+          <p>auctor</p>
+          <p>aornare odi</p>
+          <p>morbi</p>
+          <p>accumsan</p>
+          <p>ipsum</p>
+          <p>velit</p>
+          <p>nam</p>
+          <p>tellus</p>
+          <p>aodio</p>
+          <p>tincidunt</p>
+          <p>auctor</p>
+          <p>aornare odi</p>
+        </div>
+      </div>
+      <div class="feature-product">
+        <div class="title" style="margin-top: 56px;">
+          <p>FEATURED PRODUCTS <i class="fas fa-sort-down" style="color: #f50057;"></i></p>
+        </div>
+        <div class="summary-item feature-item" style="margin-top: 28px;">
+          <div class="sum-img">
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item feature-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item feature-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coupon">
+        <div class="coupon-main">
+          <p>$5</p>
+          <p>COUPON</p>
+          <P>FOR FREE</P>
+          <P>Just Signup For Our Newsletter And Get $5 To Your Account</P>
+          <input type="text" name="" id="">
+          <button class="sign-up"></button>
+        </div>
+      </div>
+      <div class="cart"></div>
+    </div>
+    <div class="main-right">
+      <div class="main-right-top">
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+        <div class="item-top">
+          <div class="content-box">
+            <p id="title">SALES</p>
+            <hr class="hr">
+            <p>9 items</p>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn-navigation btn-previus">
+          <p>
+            <i class="fi-rr-angle-small-left"></i>
+          </p>
+        </div>
+        <div class="btn-navigation btn-next">
+          <p><i class="fi-rr-angle-small-right"></i></p>
+        </div>
+      </div>
+      <div class="filter">
+
+      </div>
+      <div class="main-right-bottom">
+        <div class="item-bottom">
+          <div class="image">
+          </div>
+          <div class="sale">
+            <p>SALE!</p>
+          </div>
+          <div class="new">
+            <p>NEW</p>
+          </div>
+          <div class="content-item">
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="fas fa-list"></i>View Cart
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">DENIM CLASSY SHORTS</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="far fa-star"></i>View Whishlist
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image">
+          </div>
+          <div class="sale">
+            <p>SALE!</p>
+          </div>
+          <div class="content-item">
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="new" style="top: 25px !important;">
+            <p>NEW</p>
+          </div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image">
+          </div>
+          <div class="sale">
+            <p>SALE!</p>
+          </div>
+          <div class="new">
+            <p>NEW</p>
+          </div>
+          <div class="content-item">
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image">
+          </div>
+          <div class="content-item">
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="sale">
+            <p>SALE!</p>
+          </div>
+          <div class="new">
+            <p>NEW</p>
+          </div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image">
+          </div>
+          <div class="content-item">
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35.00-$89.99</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="image"></div>
+          <div class="content-item">
+            <div class="linee">
+              <hr>
+            </div>
+            <div class="name-item">BACK IMPRESSION</div>
+            <div class="price">$35000</div>
+            <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-list-alt"></i>
+              <i class="fi-rr-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn-navigation btn-previus">
+          <p>
+            <i class="fi-rr-angle-small-left"></i>
+          </p>
+        </div>
+        <p class="num-page num-page-active">1</p>
+        <p class="num-page">2</p>
+        <p class="num-page">3</p>
+        <p class="num-page">4</p>
+        <p class="num-page">5</p>
+        <div class="btn-navigation btn-next">
+          <p> <i class="fi-rr-angle-small-right"></i> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our-brand">
+    <div class="container">
+      <p>OUR BRANDS</p>
+      <div class="cricle-main cricle-big">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="cricle-main">
+        <div class="cricle-small cricle-active"></div>
+        <div class="cricle-small"></div>
+        <div class="cricle-small"></div>
+        <div class="cricle-small"></div>
+      </div>
+    </div>
+  </div>
+  <div class="lasted-new">
+    <p id="lastest">LASTEST NEWS</p>
+    <div class="lastest-main">
+      <div class="lastest-card-box">
+        <div class="lastest-card">
+          <div class="img">
+            <img src="" alt="">
+          </div>
+          <div class="admin-box">
+            <div class="admin">
+              <p>By</p>
+              <p style="color: #00bcd4; margin-left: 2px;">Admin</p>
+            </div>
+            <div class="react">
+              <div class="cmt" style="color: #99a9b5;"><i class="fas fa-comment"></i>0</div>
+              <p>|</p>
+              <div class="heart" style="color: red;"><i class="fas fa-heart"></i>1</div>
+            </div>
+          </div>
+          <div class="lastest-title">
+            <p><b>5 MAY : </b>SIMPLE BLOG POST </p>
+          </div>
+          <div class="lastest-content">
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+          </div>
+          <div class="readmore">
+            <i class="fas fa-share-alt-square"></i>
+            <button class="btn-readmore">READ MORE</button>
+          </div>
+        </div>
+        <div class="lastest-card">
+          <div class="img">
+            <img src="" alt="">
+          </div>
+          <div class="admin-box">
+            <div class="admin">
+              <p>By</p>
+              <p style="color: #00bcd4; margin-left: 2px;">Admin</p>
+            </div>
+            <div class="react">
+              <div class="cmt" style="color: #99a9b5;"><i class="fas fa-comment"></i>0</div>
+              <p>|</p>
+              <div class="heart" style="color: red;"><i class="fas fa-heart"></i>1</div>
+            </div>
+          </div>
+          <div class="lastest-title">
+            <p><b>5 MAY : </b>SIMPLE BLOG POST </p>
+          </div>
+          <div class="lastest-content">
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+          </div>
+          <div class="readmore">
+            <i class="fas fa-share-alt-square"></i>
+            <button class="btn-readmore">READ MORE</button>
+          </div>
+        </div>
+        <div class="lastest-card">
+          <div class="img">
+            <img src="" alt="">
+          </div>
+          <div class="admin-box">
+            <div class="admin">
+              <p>By</p>
+              <p style="color: #00bcd4; margin-left: 2px;">Admin</p>
+            </div>
+            <div class="react">
+              <div class="cmt" style="color: #99a9b5;"><i class="fas fa-comment"></i>0</div>
+              <p>|</p>
+              <div class="heart" style="color: red;"><i class="fas fa-heart"></i>1</div>
+            </div>
+          </div>
+          <div class="lastest-title">
+            <p><b>5 MAY : </b>SIMPLE BLOG POST </p>
+          </div>
+          <div class="lastest-content">
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+          </div>
+          <div class="readmore">
+            <i class="fas fa-share-alt-square"></i>
+            <button class="btn-readmore">READ MORE</button>
+          </div>
+        </div>
+        <div class="lastest-card">
+          <div class="img">
+            <img src="" alt="">
+          </div>
+          <div class="admin-box">
+            <div class="admin">
+              <p>By</p>
+              <p style="color: #00bcd4; margin-left: 2px;">Admin</p>
+            </div>
+            <div class="react">
+              <div class="cmt" style="color: #99a9b5;"><i class="fas fa-comment"></i>0</div>
+              <p>|</p>
+              <div class="heart" style="color: red;"><i class="fas fa-heart"></i>1</div>
+            </div>
+          </div>
+          <div class="lastest-title">
+            <p><b>5 MAY : </b>SIMPLE BLOG POST </p>
+          </div>
+          <div class="lastest-content">
+            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+          </div>
+          <div class="readmore">
+            <i class="fas fa-share-alt-square"></i>
+            <button class="btn-readmore">READ MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <hr>
+        <hr style="margin-top: 3px;">
+      </div>
+      <div class="lastestNew-bottom">
+        <div class="lastest-left">
+          <div class="lastest-left-main">
+            <div style="margin-bottom: 32px;">
+              <span>WE ACCEPT</span>
+              <i class="fas fa-credit-card" style="float: right;"></i>
+            </div>
+            <div style="max-width: 400px;">
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia sapiente consequuntur quas
+                quod</p>
+              <div style="display: flex; flex-wrap: wrap;">
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+                <div class="lastest-left-item">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lastest-right">
+          <div>
+            <span>SHIPPING METHOD</span>
+            <i class="fab fa-dropbox" style="float: right;"></i>
+          </div>
+          <div style="margin-top: 31px;">
+            <div class="check">
+              <i class="far fa-check-square"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="check">
+              <i class="far fa-check-square"></i>
+              <p>Adipisicing elit, sed do eiusmod tempor </p>
+            </div>
+            <div class="check">
+              <i class="far fa-check-square"></i>
+              <p>Incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="check">
+              <i class="far fa-check-square"></i>
+              <p>Enim ad minim veniam, quis nostrud exercitation</p>
+            </div>
+            <div class="check">
+              <i class="far fa-check-square"></i>
+              <p>ullamco laboris nisi ut aliquip ex ea commodo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="summary">
+    <div class="summary-main">
+      <div class="1">
+        <div class="sum-main-title">
+          <p>NEW PRODUCTS&nbsp; <i class="fas fa-sort-down" style="color: #ff5252;"></i></p>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="2">
+        <div class="sum-main-title">
+          <p>TOP RATED PRODUCTS&nbsp; <i class="fas fa-sort-down" style="color: #ff5252;"></i></p>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="3">
+        <div class="sum-main-title">
+          <p>ON SALE&nbsp; <i class="fas fa-sort-down" style="color: #ff5252;"></i></p>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img"></div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+              <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div class="sum-img">
+            <div class="percent">
+              %
+            </div>
+          </div>
+          <div class="sum-content">
+            <div class="sum-title">
+              <p>Product Title Here</p>
+            </div>
+            <div class="sum-price-rate">
+              <p>$35.00-$89.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sell-more">
+    <div class="sell-more-main">
+      <div class="sell-more-text">
+        <i class="far fa-gem"></i>
+        <div class="sell-content">
+          <span>SELL MORE&nbsp;</span>
+          <p>WITH THE GEM SHOP!</p>
+        </div>
+      </div>
+      <button class="purchase-btn">PURCHASE NOW!</button>
+    </div>
+  </div>
+  <div class="footer-top">
+    <div class="footer-top-main">
+      <div class="col col1">
+        <div class="col-logo">
+          <img src="./public/logo-2.png" alt="">
+          <p>THE <b>GEM</b></p>
+        </div>
+        <div class="col-about">
+          Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitu-din, lorem quis bibendum auctor,
+          nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+        </div>
+        <div class="col-contact">
+          <div class="col-title">
+            <span>CONTACT <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+          </div>
+          <div class="col-contact-content">
+            <p><i class="fal fa-map-marker-alt"></i>&nbsp;&nbsp; Address:</p>
+            <p>908 New Hampshire Avenue Northwest <br> #100, Washington, DC <br>
+              20037, United States</p>
+          </div>
+          <div class="dashed">
+            <hr>
+          </div>
+          <div class="col-contact-item">
+            <p><i class="fas fa-headphones-alt"></i> Phone: +1 916-875-2235</p>
+            <p><i class="fal fa-fax"></i>Fax: +1 916-875-2235</p>
+            <p><i class="fal fa-envelope"></i>Email: <a href="">info@domain.ltd</a></p>
+            <p><i class="far fa-globe"></i>Website: <a href="">www.codex-themes.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col col2">
+        <div class="recent-post">
+          <div class="col-title">
+            <span>RECENT POST <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+          </div>
+          <div class="recent-item">
+            <div class="recent-img"></div>
+            <div class="recent-content">Proin gravida nibh vel velit auctor aliquet aenean...
+              <br> 27 Dec 2015
+            </div>
+            <div class="dashed-recent">
+              <hr>
+            </div>
+          </div>
+          <div class="recent-item">
+            <div class="recent-img"></div>
+            <div class="recent-content">Proin gravida nibh vel velit auctor aliquet aenean...
+              <br> 27 Dec 2015
+            </div>
+            <div class="dashed-recent">
+              <hr>
+            </div>
+          </div>
+          <div class="recent-item">
+            <div class="recent-img"></div>
+            <div class="recent-content">Proin gravida nibh vel velit auctor aliquet aenean...
+              <br> 27 Dec 2015
+            </div>
+          </div>
+        </div>
+        <div class="usefull-link">
+          <div class="col-title">
+            <span>USEFUL LINKS <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+          </div>
+          <div class="link-use">
+            <p><i class="fas fa-circle"></i>General Information For Users</p>
+            <div class="dashed">
+              <hr style="margin: 9px 0px !important;">
+            </div>
+          </div>
+          <div class="link-use">
+            <p><i class="fas fa-circle"></i>Interactive Fairy Tales</p>
+            <div class="dashed">
+              <hr style="margin: 9px 0px !important;">
+            </div>
+          </div>
+          <div class="link-use">
+            <p><i class="fas fa-circle"></i>Official Storybook Maker Website</p>
+            <div class="dashed">
+              <hr style="margin: 9px 0px !important;">
+            </div>
+          </div>
+          <div class="link-use">
+            <p><i class="fas fa-circle"></i>Everyday Mathematics Links</p>
+            <div class="dashed">
+              <hr style="margin: 9px 0px !important;">
+            </div>
+          </div>
+          <div class="link-use">
+            <p><i class="fas fa-circle"></i>Basic Knowledge and Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col3">
+        <div class="col-title">
+          <span>EMAIL US <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+        </div>
+        <div class="col-message">
+          <div class="name input-msg">
+            <input type="text" placeholder="Your name">
+            <i class="fas fa-user icon-input"></i>
+          </div>
+          <div class="email input-msg">
+            <input type="text" placeholder="Your@email.address">
+            <i class="fas fa-envelope icon-input"></i>
+          </div>
+          <div class="comment input-msg">
+            <textarea placeholder="Your message" name="" id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <div class="message"></div>
+          <button class="send-msg">SEND MESSAGE</button>
+        </div>
+        <div class="col-project">
+          <div class="col-title">
+            <span>PROJECT / CLIENTS ? <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+          </div>
+          <div class="project">
+            <div class="prj-item prj1"></div>
+            <div class="prj-item prj2"></div>
+            <div class="prj-item prj3"></div>
+            <div class="prj-item prj2"></div>
+            <div class="prj-item prj3"></div>
+            <div class="prj-item prj1"></div>
+          </div>
+          <div class="picker">
+            <div class="pick-item pick-active"></div>
+            <div class="pick-item"></div>
+            <div class="pick-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col col4">
+        <div class="col-title">
+          <span>FICKER FEED <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+        </div>
+        <div class="project">
+          <div class="prj-item prj1"></div>
+          <div class="prj-item prj2"></div>
+          <div class="prj-item prj3"></div>
+          <div class="prj-item prj2"></div>
+          <div class="prj-item prj3"></div>
+          <div class="prj-item prj1"></div>
+          <div class="prj-item prj1"></div>
+          <div class="prj-item prj1"></div>
+          <div class="prj-item prj2"></div>
+        </div>
+        <div class="col-title" style="margin-top: 55px;">
+          <span>NEWSLETER <i class="fas fa-sort-down" style="color: #f50057;"></i></span>
+        </div>
+        <div class="letter-content">
+          <div class="letter-title">Subscribe to our MailChimp newsletter and stay up to date with all events coming
+            straight in your mailbox:</div>
+          <div class="letter-input">
+            <input id="letter-input" type="text" placeholder="Your email address">
+            <div class="btn-letter">
+              <i class="far fa-angle-right"></i>
+            </div>
+          </div>
+          <div id="letter-text">
+            <p style="color: #03adc4;">*</p>
+            <p>&nbsp;Personal information will be encrypted</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="footer-bot-main">
+      <div class="coppy-right">
+        © Copyright 2015 <a style="text-decoration: none; color: #00bcd4;" href="">CodexThemes</a>
+      </div>
+      <div class="about-us">
+        <p>Suport</p>
+        <P>Contact Us</P>
+        <p>Disclaimer</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footer-icon">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-invision"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+        <a href=""><i class="fas fa-camera-retro"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="on-top">
+    <i class="far fa-angle-up"></i>
+  </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
