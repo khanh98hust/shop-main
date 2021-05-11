@@ -1402,6 +1402,11 @@ textarea {
   position: fixed;
   bottom: 77px;
   right: 8%;
+  visibility: hidden;
+}
+
+.on-top.show {
+  visibility: visible;
 }
 
 #filter-price {
@@ -1648,3 +1653,4 @@ textarea {
   font-size: 30px;
   margin: 0px 8px !important;
 }
+
