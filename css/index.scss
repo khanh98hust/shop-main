@@ -1669,13 +1669,13 @@ textarea {
 	a {
 		&:hover {
 			background: none;
-			color: #0082e6;
+			color: $blue;
 		}
 	}
 
 	a.active {
 		background: none;
-		color: #0082e6;
+		color: $blue;
 	}
 
 	#check {
