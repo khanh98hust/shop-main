@@ -60,7 +60,9 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.main-nav-top-area, .link-nav a, .icon a {
+.main-nav-top-area,
+.link-nav a,
+.icon a {
   color: #758e9e;
 }
 
@@ -71,6 +73,8 @@
 }
 
 .sell-more-main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 80px 0px 67px 0px;
 }
 
@@ -178,7 +182,8 @@
   color: #00bcd4;
 }
 
-.nav-menu-right {
+.nav-menu-right,
+.cart-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,15 +194,9 @@
 }
 
 .cart-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 32px;
   height: 17px;
   background-color: #00bcd4;
@@ -318,7 +317,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 20px 0px 20px;
+  margin: 100px 20px 0px;
 }
 
 .main-left {
@@ -377,7 +376,8 @@
   margin-bottom: 42px;
 }
 
-.main-right-top, .main-right-bottom {
+.main-right-top,
+.main-right-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,7 +582,8 @@ i {
   margin: 0 !important;
 }
 
-.btn-navigation, .num-page {
+.btn-navigation,
+.num-page {
   width: 30px;
   height: 30px;
   border: 1px solid;
@@ -593,7 +594,8 @@ i {
   border-radius: 2px;
 }
 
-.btn-navigation:hover, .num-page:hover {
+.btn-navigation:hover,
+.num-page:hover {
   background-color: #3c3950;
   color: white;
   cursor: pointer;
@@ -644,11 +646,21 @@ i {
   font-family: "SourceSansPro-Regular";
 }
 
+.filter-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .container {
   font-family: "Montserrat-light", sans-serif;
   margin-top: 120px;
   font-weight: lighter;
-  height: 430px;
   padding: 32px 8px;
   background: linear-gradient(-135deg, #ffffff 16px, transparent 0), linear-gradient(135deg, #ffffff 16px, transparent 0), linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
   background-color: #f0f3f2;
@@ -679,11 +691,11 @@ i {
   background-color: #99a9b5;
 }
 
-.cricle-big {
+.circle-big {
   padding: 83px 0px;
 }
 
-.cricle-small {
+.circle-small {
   background-color: #b6c6c9;
   width: 16px;
   height: 16px;
@@ -692,18 +704,28 @@ i {
   margin: 0px 10px;
 }
 
-.cricle-active {
+.circle-active {
   background-color: white !important;
   border: 4px solid #b6c6c9;
 }
 
-.cricle-main {
+.circle-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.circle-filter {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #00bcd4;
+  position: absolute;
 }
 
 .lasted-new {
@@ -724,7 +746,8 @@ i {
   margin-right: auto;
 }
 
-.lastestNew-bottom, .lastest-card-box {
+.lastestNew-bottom,
+.lastest-card-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,7 +770,9 @@ i {
   padding-bottom: 67%;
 }
 
-.admin, .react, .readmore {
+.admin,
+.react,
+.readmore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,7 +803,8 @@ i {
           justify-content: space-between;
 }
 
-.cmt i, .heart i {
+.cmt i,
+.heart i {
   margin-right: 10px !important;
 }
 
@@ -817,7 +843,8 @@ i {
   margin: 45px 0px;
 }
 
-.lastest-left, .lastest-right {
+.lastest-left,
+.lastest-right {
   border: 1px solid #dfe5e8;
   border-radius: 0px 50px 50px 50px;
   max-width: 565px;
@@ -825,23 +852,27 @@ i {
   margin-bottom: 30px;
 }
 
-.lastest-right, .lastest-left-main {
+.lastest-right,
+.lastest-left-main {
   padding: 52px 50px 47px 58px;
 }
 
-.lastest-right span, .lastest-left-main span {
+.lastest-right span,
+.lastest-left-main span {
   font-family: "Montserrat-Bold";
   font-size: 24px;
   color: #3c3950;
 }
 
-.lastest-right p, .lastest-left-main p {
+.lastest-right p,
+.lastest-left-main p {
   font-family: "SourceSansPro-Regular";
   font-size: 16px;
   color: #5f727f;
 }
 
-.lastest-right i, .lastest-left-main i {
+.lastest-right i,
+.lastest-left-main i {
   font-size: 30px;
 }
 
@@ -1083,6 +1114,8 @@ ul {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-top {
@@ -1223,7 +1256,8 @@ ul {
   color: white;
 }
 
-.email input, .name input {
+.email input,
+.name input {
   height: 40px;
   width: 100%;
   background-color: #181828;
@@ -1438,6 +1472,7 @@ textarea {
   bottom: 77px;
   right: 8%;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .on-top.show {
@@ -1450,14 +1485,6 @@ textarea {
   background-color: #b6c6c9;
   position: relative;
   margin: 26px 0px;
-}
-
-.circle-filter {
-  width: 14px;
-  height: 14px;
-  border-radius: 100%;
-  background-color: #00bcd4;
-  position: absolute;
 }
 
 .cr1 {
@@ -1602,26 +1629,26 @@ textarea {
   padding: 20px;
 }
 
-#coupon-price {
-  font-size: 120px;
-  color: white;
-  font-family: "Montserrat-bold";
-}
-
 .coupon-title {
   font-size: 30px;
   font-family: "Montserrat-bold";
   color: white;
 }
 
-.free {
-  color: #ffd75e;
-}
-
 .coupon-content {
   color: white;
   font-family: "SourceSansPro-light";
   font-size: 24px;
+}
+
+#coupon-price {
+  font-size: 120px;
+  color: white;
+  font-family: "Montserrat-bold";
+}
+
+.free {
+  color: #ffd75e;
 }
 
 #coupon-input {
@@ -1751,6 +1778,31 @@ textarea {
   }
   .slider-content p {
     font-size: 20px;
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+  }
+  .but {
+    font-size: 25px;
+  }
+  .item-top {
+    max-width: 185px;
+    height: 245px;
+  }
+}
+
+@media (max-width: 900px) {
+  .item-bottom {
+    max-width: 150px;
+  }
+  .name-item {
+    font-size: 11px;
+  }
+  .item-top {
+    max-width: 150px;
+    height: 230px;
   }
 }
 /*# sourceMappingURL=index.css.map */
