@@ -1046,6 +1046,8 @@ ul {
 
 .footer-bot-main {
 	@extend .main-container;
+	flex-wrap: wrap;
+	padding: 41px 0px;
 }
 
 .footer-top {
@@ -1346,13 +1348,11 @@ textarea {
 .footer-bot {
 	background-color: #181828;
 	border-top: 1px solid #313646;
-	height: 100px;
-	display: flex;
 }
 
 .about-us {
 	display: flex;
-
+	flex-wrap: wrap;
 	p {
 		padding: 0px 15px;
 		border-right: 1px solid;
@@ -1565,6 +1565,7 @@ textarea {
 	color: #99a9b5;
 	border: none;
 	margin-top: 40px;
+	width: 100%;
 }
 
 .sign-up {
@@ -1728,5 +1729,41 @@ textarea {
 	.item-top {
 		max-width: 150px;
 		height: 230px;
+	}
+
+	.main-left {
+		max-width: 220px;
+	}
+
+	.image {
+		padding-bottom: 100%;
+	}
+}
+
+@media (max-width: 670px) {
+	.navigation > .num-page {
+		display: none;
+	}
+	.sell-content {
+		font-size: 20px;
+	}
+	.main-left {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.logo {
+		span {
+			font-size: 12px;
+		}
+	}
+	.summary-item {
+		width: 300px;
+	}
+	.sum-price-rate {
+		p {
+			font-size: 14px;
+		}
 	}
 }
