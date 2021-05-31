@@ -56,7 +56,12 @@
   margin: 0 auto;
 }
 
+.main-nav-bottom {
+  margin: 0 10px;
+}
+
 .main-nav-top-area {
+  margin: 0 10px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -176,6 +181,7 @@
 .nav-menu a {
   text-decoration: none;
   padding: 10px 22px;
+  color: #3c3950;
 }
 
 .nav-menu a:hover {
@@ -213,7 +219,7 @@
   margin: 0px 12px !important;
 }
 
-.slider {
+#slide-show {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,9 +230,49 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 400px;
-  background: -webkit-gradient(linear, left top, right top, from(#863f5f), color-stop(21%, #eac6ee), color-stop(52%, #b439ec), color-stop(76%, #708083));
-  background: linear-gradient(90deg, #863f5f 0%, #eac6ee 21%, #b439ec 52%, #708083 76%);
+  background-image: url("../public/slider1.png");
+  background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5.5% 0;
+}
+
+.pick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: auto;
+}
+
+#login {
+  position: absolute;
+  display: none;
+  top: 200px;
+  left: 50%;
+  border: 1px solid black;
+  padding: 100px;
+}
+
+.pick {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #333333;
+  margin: 0 7px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.pick-dot {
+  background-color: #ffffff;
+}
+
+.pick:hover {
+  background-color: white;
 }
 
 .slider-content {
@@ -1220,6 +1266,7 @@ ul {
   border-top: 1px dashed;
   color: #737e8a;
   margin: 32px 0px;
+  max-width: 2px;
 }
 
 .dashed-recent hr {
@@ -1732,6 +1779,66 @@ textarea {
   font-size: 30px;
   margin: 0px 8px !important;
   color: #b6c6c9;
+}
+
+#registration {
+  position: fixed;
+  background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+  padding: 30px;
+  top: 160px;
+  left: 38%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #00bcd4;
+  z-index: 1000;
+}
+
+#registration p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#registration input {
+  width: 295px;
+  height: 48px;
+  margin-bottom: 25px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+#registration input:focus {
+  outline: none;
+  border: 2px solid #00bcd4;
+}
+
+#registration button {
+  background-color: #3c3950;
+  width: 295px;
+  height: 48px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+#registration i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: white;
+}
+
+#registration i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#registration button:hover {
+  background-color: #00bcd4;
 }
 
 @media (max-width: 1125px) {

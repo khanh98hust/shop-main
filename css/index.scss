@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import 'color';
 
 @font-face {
 	font-family: "Montserrat-light";
@@ -21,9 +22,7 @@
 	src: url("../public/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
 }
 
-//color
-$purple: #3c3950;
-$blue: #00bcd4;
+
 
 * {
 	margin: 0px;
@@ -52,10 +51,12 @@ $blue: #00bcd4;
 
 .main-nav-bottom {
 	@extend .main-container;
+	margin: 0 10px;
 }
 
 .main-nav-top-area {
 	@extend .main-container;
+	margin: 0 10px;
 	font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -161,6 +162,7 @@ $blue: #00bcd4;
 	a {
 		text-decoration: none;
 		padding: 10px 22px;
+		color: $purple;
 
 		&:hover {
 			color: $blue;
@@ -196,19 +198,47 @@ $blue: #00bcd4;
 	margin: 0px 12px !important;
 }
 
-.slider {
+#slide-show {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 400px;
-	background: linear-gradient(
-		90deg,
-		rgba(134, 63, 95, 1) 0%,
-		rgba(234, 198, 238, 1) 21%,
-		rgba(180, 57, 236, 1) 52%,
-		rgba(112, 128, 131, 1) 76%
-	);
+	background-image: url('../public/slider1.png');
+	background-size: cover;
+	transition: all 0.3s;
+	padding: 5.5% 0;
+}
+.pick-slide {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: auto;
+}
+
+#login {
+	position: absolute;
+	display: none;
+	top: 200px;
+	left: 50%;
+	border: 1px solid black;
+	padding: 100px;
+}
+
+.pick {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: rgb(51, 51, 51);
+	margin: 0 7px;
+	cursor: pointer;
+	transition: all 0.4s;
+	&-dot {
+		background-color: #ffffff;
+	}
+	&:hover {
+		background-color: white;
+	}
 }
 
 .slider-content {
@@ -1145,6 +1175,7 @@ ul {
 		border-top: 1px dashed;
 		color: #737e8a;
 		margin: 32px 0px;
+		max-width: 2px;
 	}
 
 	&-recent {
@@ -1630,6 +1661,63 @@ textarea {
 	font-size: 30px;
 	margin: 0px 8px !important;
 	color: #b6c6c9;
+}
+
+#registration {
+	position: fixed;
+	background: -webkit-linear-gradient(top,#7579ff,#b224ef);
+	padding: 30px ;
+	top: 160px;
+	left: 38%;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid #00bcd4;
+	z-index: 1000;
+	p {
+		font-size: 22px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: white;
+		margin-bottom: 50px;
+	}
+	input {
+		width: 295px;
+		height: 48px;
+		margin-bottom: 25px;
+		padding: 0px 10px;
+		border-radius: 5px;
+		border: 1px solid grey;
+		&:focus {
+			outline: none;
+			border: 2px solid $blue;
+		}
+	}
+	button {
+		background-color: $purple;
+		width: 295px;
+		height: 48px;
+		color: white;
+		font-size: 18px;
+		border: none;
+		border-radius: 5px;
+	}
+	i {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		color: white;
+	}
+	i:hover {
+		cursor: pointer;
+		color: red;
+	}
+	button:hover {
+		background-color: $blue;
+	}
+}
+
+@media (max-width: 1205px) {
+
 }
 
 @media (max-width: 1125px) {

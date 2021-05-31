@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -38,7 +39,7 @@
           <a href="#">> Newsletter Signup</a>
           <a href="#">> Shipping Terms</a>
         </div>
-        <button class="btn-nav">My Whishlist</button>
+        <button onclick="registerShow()" class="btn-nav">My Whishlist</button>
       </div>
     </div>
   </div>
@@ -71,7 +72,7 @@
       </div>
     </div>
   </div>
-  <div class="slider">
+  <div id="slide-show">
     <div class="slider-content">
       <span><b>50%</b> OFF</span>
       <p>Annual Seasonal Discounts On All Kinds Of Jewelry In Selected Categories.</p>
@@ -79,16 +80,21 @@
     </div>
     <div class="btn-box">
       <div class="btn btn-left">
-        <i class="fas fa-arrow-left but"></i>
+        <i onclick="previus(-1)" class="fas fa-arrow-left but"></i>
       </div>
       <div class="btn btn-right">
-        <i class="fas fa-arrow-right but"></i>
+        <i onclick="previus(1)" class="fas fa-arrow-right but"></i>
       </div>
     </div>
     <div class="breadcrumb">
       <p style="color: #00bcd4;">Home</p>
       <p style="color: white;">→</p>
       <p class="link-active" style="color: white;">Shop</p>
+    </div>
+    <div class="pick-slide">
+      <div class="pick pick-dot" onclick="pickSlide(0)"></div>
+      <div class="pick" onclick="pickSlide(1)"></div>
+      <div class="pick" onclick="pickSlide(2)"></div>
     </div>
   </div>
   <div class="main">
@@ -1284,6 +1290,17 @@
   </div>
   <div class="on-top">
     <i class="far fa-angle-up"></i>
+  </div>
+  <div id="registration" style="display: none;" class="animate__animated animate__fadeInDown">
+    <form action="" onsubmit="register()">
+      <p>Registration</p>
+      <i onclick="registerShow()" class="fas fa-times"></i>
+      <input onchange="regis()" id="username" type="text" placeholder="Username" required><br>
+      <input type="email" placeholder="Email Address" ><br>
+      <input type="password" placeholder="Password" ><br>
+      <input type="password" placeholder="Confirm Password" ><br>
+      <button type="submit">Register</button>
+    </form>
   </div>
 </body>
 <script src="./app.js"></script>
