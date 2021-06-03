@@ -91,7 +91,8 @@ var debo = debounce(() => {
   }, 5000)
 })
 
-previus = (n) => {
+// chuyen slide
+move = (n) => {
   showSlide(index += n)
   clearInterval(slideInterval)
   debo()
