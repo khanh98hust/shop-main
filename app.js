@@ -74,7 +74,7 @@ sliderInterval = () => {
   setInterval(() => {
     showSlide(index)
     index++
-  }, 1000)
+  }, 5000)
 }
 
 previus = (n) => {
