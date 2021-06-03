@@ -1673,29 +1673,36 @@ textarea {
 	border-radius: 10px;
 	border: 1px solid #00bcd4;
 	z-index: 1000;
+	font-family: "Montserrat-light";
 	p {
 		font-size: 22px;
 		margin-bottom: 20px;
 		text-transform: uppercase;
 		color: white;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 	input {
 		width: 295px;
-		height: 48px;
-		margin-bottom: 25px;
+		height: 40px;
+		margin-bottom: 5px;
 		padding: 0px 10px;
 		border-radius: 5px;
-		border: 1px solid grey;
+		border: 2px solid rgb(139, 115, 247);
 		&:focus {
 			outline: none;
 			border: 2px solid $blue;
 		}
 	}
+	label {
+		color: white;
+		float: left;
+		margin-top: 5px;
+	}
+
 	button {
 		background-color: $purple;
-		width: 295px;
-		height: 48px;
+		width: 200px;
+		height: 40px;
 		color: white;
 		font-size: 18px;
 		border: none;
@@ -1714,6 +1721,50 @@ textarea {
 	button:hover {
 		background-color: $blue;
 	}
+}
+
+.form-item {
+	small {
+		float: left;
+		display: none;
+	}
+}
+
+.form-err {
+	small {
+		display: block;
+		color: yellow;
+	}
+	input {
+		border-color: #e74c3c !important;
+	}
+}
+
+.form-success {
+	input {
+		border-color: #2ecc71 !important;
+	}
+}
+
+.regis-success-box {
+	position: fixed;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+}
+
+.regis-success {
+	background-color: #2ecc71;
+	padding: 30px 50px;
+	font-size: 35px;
+	border-radius: 10px;
+	font-family: "Montserrat-bold";
+	color: white;
 }
 
 @media (max-width: 1205px) {

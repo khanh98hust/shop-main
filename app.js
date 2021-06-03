@@ -105,18 +105,109 @@ function bodautiengviet (str) {
   return str;
 }
 
-register = () => {
-  var name = document.getElementById('username').value
-  var namebodau = bodautiengviet(name)
-  regex = /^[a-zA-Z0-9 ]/g
-  console.log(regex.test(namebodau));
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('pw');
+const password2 = document.getElementById('pw2');
+
+var errName, errEmail, errPw, errPw2
+
+showErr = (input, msg) => {
+  var formItem = input.parentElement;
+  // console.log(formItem);
+  formItem.className = 'form-item form-err';
+  var small = formItem.querySelector('small')
+  small.innerText = msg
+  if(input == username) errName = true
+  if(input == email) errEmail = true
+  if(input == password) errPw = true
+  if(input == password2) errPw2 = true
 }
 
-regis = () => {
-  var name = document.getElementById('username').value
-  var namebodau = bodautiengviet(name)
-  regex = /^[a-zA-Z0-9 ]/g
-  console.log(regex.test(namebodau));
+showSucces = (input) => {
+  var formItem = input.parentElement;
+  formItem.className = 'form-item form-success';
+  if(input == username) errName = false
+  if(input == email) errEmail = false
+  if(input == password) errPw = false
+  if(input == password2) errPw2 = false
+}
+
+regisName = () => {
+  var namebodau = bodautiengviet(username.value)
+  var regex = /^[a-zA-Z0-9 ]+$/g
+  // console.log(regex.test(namebodau));
+  if(!regex.test(namebodau)){
+    showErr(username, 'Tên không được chứa ký tự đặc biệt !')
+  }else {
+    showSucces(username)
+  }
+  disableSubmit()
+}
+
+regisEmail = () => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(email.value.trim())) {
+        showSucces(email)
+    }else {
+        showErr(email,'Email không đúng !');
+    }
+  disableSubmit()
+}
+
+regisPassword = () => {
+  // console.log(password.value.length );
+  if(password.value.length < 8 || password.value.length > 32){
+    showErr(password , 'Password chứa 8 - 32 ký tự !')
+  }else {
+    var chuhoa = /[A-Z]/g
+    var chuthuong = /[a-z]/g
+    if(password.value.match(chuhoa) && password.value.match(chuthuong)){
+      showSucces(password)
+    }else {
+      showErr(password , 'Password phải chứa ít nhất 1 chữ hoa và chữ thường')
+    }
+  }
+  disableSubmit()
+}
+
+confirmPassword = () =>{
+  if(password.value != password2.value || password2.value == '') {
+    showErr(password2 , 'Password không trùng !')
+  }else {
+    showSucces(password2)
+  }
+  disableSubmit()
+}
+
+disableSubmit = () => {
+  if(errName || errPw || errPw2 || errEmail) {
+    document.getElementById('regis-btn').disabled = true
+    document.getElementById('regis-btn').style.cursor = 'no-drop'
+  }else{
+    document.getElementById('regis-btn').disabled = false
+    document.getElementById('regis-btn').style.cursor = 'auto'
+  }
+}
+
+showRegisSuccess = () => {
+  registerShow();
+  document.getElementsByClassName("regis-success-box")[0].style.display = "flex"
+  setTimeout(()=> {
+    document.getElementsByClassName("regis-success-box")[0].style.display = "none"
+  }, 1000)
+}
+
+register = (event) => {
+  event.preventDefault();
+    regisName();
+    regisEmail();
+    regisPassword();
+    confirmPassword();
+  if(errName || errPw || errPw2 || errEmail){
+  }else {
+    showRegisSuccess()
+  }
 }
 
 sliderInterval();
