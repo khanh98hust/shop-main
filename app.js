@@ -57,11 +57,9 @@ var index = 0;
 showSlide = (x) => {
   if(x < 0) {
     index = listSliders.length - 1
-  }
-  if(x > listSliders.length - 1) {
+  }else if(x > listSliders.length - 1) {
     index = 0
   }
-  // console.log(x);
   document.getElementById("slide-show").style.backgroundImage = `url(${listSliders[index]})`
   var dot = document.getElementsByClassName("pick");
   for (i = 0; i < dot.length; i++) {
@@ -70,22 +68,40 @@ showSlide = (x) => {
   dot[index].classList.add("pick-dot")
 }
 
-sliderInterval = () => {
-  setInterval(() => {
-    showSlide(index)
-    index++
-  }, 5000)
+var slideInterval = setInterval(() => {
+  ++index
+  showSlide(index)
+}, 5000)
+
+//debounce
+
+function debounce(func, timeout = 1000){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
 }
 
+var debo = debounce(() => {
+  // console.log('runnn');
+  setInterval(() => {
+    ++index
+    showSlide(index)
+  }, 5000)
+})
+
 previus = (n) => {
-  index += n;
-  showSlide(index)
+  showSlide(index += n)
+  clearInterval(slideInterval)
+  debo()
 };
 
 pickSlide = (n) => {
-  index = n
-  showSlide(index)
+  showSlide(index = n)
 };
+
+// register
 
 registerShow = () => {
   var login = document.getElementById("registration")
@@ -210,4 +226,4 @@ register = (event) => {
   }
 }
 
-sliderInterval();
+
