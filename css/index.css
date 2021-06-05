@@ -27,27 +27,34 @@
           box-sizing: border-box;
 }
 
-.nav-top-area {
-  background-color: #f4f6f7;
-  font-weight: bold;
-  border-top: 5px solid #00bcd4;
+.nav-top-area, .nav-bottom, .nav-menu-right,
+.cart-number, #slide-show, .navigation, .picker, .regis-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 55px;
-  position: relative;
 }
 
-.main-container, .main-nav-bottom, .main-nav-top-area, .summary-main, .sell-more-main, .footer-top-main, .footer-bot-main {
+.main-container, .main-nav-bottom, .main-nav-top-area, .summary-main, .sell-more-main, .footer-top-main, .footer-bot-main, .filter, .admin-box, .sum-price-rate, .project, .filter-price-btn-box, .sub-total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav-top-area {
+  background-color: #f4f6f7;
+  font-weight: bold;
+  border-top: 5px solid #00bcd4;
+  height: 55px;
+  position: relative;
+}
+
+.main-container, .main-nav-bottom, .main-nav-top-area, .summary-main, .sell-more-main, .footer-top-main, .footer-bot-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,7 +100,7 @@
   margin: 0px 8px;
 }
 
-.phoneNumber {
+.phoneNumber, .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,12 +110,6 @@
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
 }
 
@@ -158,12 +159,6 @@
 }
 
 .nav-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100px;
   position: -webkit-sticky;
   position: sticky;
@@ -190,19 +185,10 @@
 
 .nav-menu-right,
 .cart-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-}
-
-.cart-number {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 32px;
   height: 17px;
   background-color: #00bcd4;
@@ -210,6 +196,7 @@
           clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
 
+.nav-menu-right p,
 .cart-number p {
   color: white;
   font-size: 14px;
@@ -221,15 +208,9 @@
 
 #slide-show {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-image: url("../public/slider1.png");
   background-size: cover;
   -webkit-transition: all 0.3s;
@@ -429,6 +410,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .content-box {
@@ -496,12 +480,6 @@
 
 .navigation {
   font-family: "Montserrat-Light";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 14px;
 }
 
@@ -664,14 +642,8 @@ i {
   width: 95%;
   margin-left: 40px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .filter select {
@@ -794,14 +766,14 @@ i {
 
 .lastestNew-bottom,
 .lastest-card-box {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .lastest-card {
@@ -841,12 +813,6 @@ i {
 .admin-box {
   font-family: "SourceSansPro-Regular";
   padding: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .cmt i,
@@ -1060,15 +1026,8 @@ ul {
 }
 
 .sum-price-rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: white;
   margin-top: 8px;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1378,14 +1337,8 @@ textarea {
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .prj-item {
@@ -1408,12 +1361,6 @@ textarea {
 
 .picker {
   margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .pick-item {
@@ -1549,12 +1496,6 @@ textarea {
 }
 
 .filter-price-btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1724,15 +1665,9 @@ textarea {
 }
 
 .sub-total {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 38px;
 }
 
@@ -1786,7 +1721,6 @@ textarea {
   background: -webkit-linear-gradient(top, #7579ff, #b224ef);
   padding: 30px;
   top: 160px;
-  left: 38%;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #00bcd4;

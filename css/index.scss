@@ -30,19 +30,27 @@
 	box-sizing: border-box;
 }
 
+%flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+%flex-spaceBetween {
+	display: flex;
+	justify-content: space-between;
+}
+
 .nav-top-area {
+	@extend %flex-center;
 	background-color: #f4f6f7;
 	font-weight: bold;
 	border-top: 5px solid $blue;
-	display: flex;
-	justify-content: center;
 	height: 55px;
 	position: relative;
 }
 
 .main-container {
-	display: flex;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 	align-items: center;
 	max-width: 1170px;
 	width: 100%;
@@ -92,14 +100,12 @@
 	}
 }
 
-.phoneNumber {
+.phoneNumber, .logo {
 	display: flex;
 	align-items: center;
 }
 
 .logo {
-	display: flex;
-	align-items: center;
 	cursor: pointer;
 
 	span {
@@ -149,8 +155,7 @@
 }
 
 .nav-bottom {
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 	height: 100px;
 	position: sticky;
 	top: 0px;
@@ -176,13 +181,9 @@
 
 .nav-menu-right,
 .cart-number {
-	display: flex;
+	@extend %flex-center;
 	align-items: center;
 	cursor: pointer;
-}
-
-.cart-number {
-	justify-content: center;
 	width: 32px;
 	height: 17px;
 	background-color: $blue;
@@ -199,10 +200,9 @@
 }
 
 #slide-show {
+	@extend %flex-center;
 	position: relative;
-	display: flex;
 	align-items: center;
-	justify-content: center;
 	background-image: url('../public/slider1.png');
 	background-size: cover;
 	transition: all 0.3s;
@@ -383,6 +383,7 @@
 .main-right-bottom {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .content-box {
@@ -442,8 +443,7 @@
 
 .navigation {
 	font-family: "Montserrat-Light";
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 	font-size: 14px;
 }
 
@@ -601,9 +601,8 @@ i {
 	width: 95%;
 	margin-left: 40px;
 	padding: 10px;
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 
 	select {
 		color: #a1b0ba;
@@ -718,9 +717,9 @@ i {
 
 .lastestNew-bottom,
 .lastest-card-box {
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .lastest-card {
@@ -760,8 +759,7 @@ i {
 .admin-box {
 	font-family: "SourceSansPro-Regular";
 	padding: 18px;
-	display: flex;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 }
 
 .cmt,
@@ -982,11 +980,9 @@ ul {
 }
 
 .sum-price-rate {
-	display: flex;
 	background-color: white;
 	margin-top: 8px;
-	display: flex;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 	align-items: center;
 	width: 100%;
 
@@ -1294,9 +1290,8 @@ textarea {
 }
 
 .project {
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 }
 
 .prj-item {
@@ -1319,8 +1314,7 @@ textarea {
 
 .picker {
 	margin-top: 5px;
-	display: flex;
-	justify-content: center;
+	@extend %flex-center;
 }
 
 .pick-item {
@@ -1450,8 +1444,7 @@ textarea {
 }
 
 .filter-price-btn-box {
-	display: flex;
-	justify-content: space-between;
+	@extend %flex-spaceBetween;
 	align-items: center;
 }
 
@@ -1612,9 +1605,8 @@ textarea {
 }
 
 .sub-total {
-	display: flex;
+	@extend %flex-spaceBetween;
 	align-items: center;
-	justify-content: space-between;
 	margin-top: 38px;
 }
 
@@ -1663,12 +1655,15 @@ textarea {
 	color: #b6c6c9;
 }
 
+.regis-box {
+	@extend %flex-center;
+}
+
 #registration {
 	position: fixed;
 	background: -webkit-linear-gradient(top,#7579ff,#b224ef);
 	padding: 30px ;
 	top: 160px;
-	left: 38%;
 	text-align: center;
 	border-radius: 10px;
 	border: 1px solid #00bcd4;

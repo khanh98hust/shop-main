@@ -84,8 +84,7 @@ function debounce(func, timeout = 1000){
 }
 
 var debo = debounce(() => {
-  // console.log('runnn');
-  setInterval(() => {
+  return slideInterval = setInterval(() => {
     ++index
     showSlide(index)
   }, 5000)
